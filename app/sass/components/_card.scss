@@ -1,0 +1,93 @@
+@use '../utils/' as u;
+@use '../abstracts/' as a;
+
+.card {
+	border-radius: 0.5rem;
+	width: 330px;
+	margin: 1.25em auto;
+	overflow: hidden;
+	padding: 1.5em;
+	box-shadow: 0px 8px 15px -10px u.$gray-blue;
+
+	h3 {
+		color: u.$dark-blue;
+
+		@include a.break(1000px) {
+			padding-bottom: 0.5rem;
+		}
+	}
+
+	p {
+		color: u.$gray-blue;
+		font-size: 0.8rem;
+	}
+
+	img {
+		padding-block: 2.5em 0;
+		transform: translate(200px, 0);
+
+		@include a.break(1000px) {
+			padding-top: 3.5em;
+		}
+	}
+
+	@include a.break(1000px) {
+		width: 355px;
+	}
+}
+
+.card-sup {
+	position: relative;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background-color: u.$sup-color;
+	}
+}
+
+.card-team {
+	position: relative;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background-color: u.$team-color;
+	}
+}
+
+.card-karma {
+	position: relative;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background-color: u.$karma-color;
+	}
+}
+
+.card-calc {
+	position: relative;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background-color: u.$calc-color;
+	}
+}

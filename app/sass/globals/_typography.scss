@@ -1,0 +1,33 @@
+@use '../utils/' as u;
+@use '../abstracts/' as a;
+
+body {
+	font-family: u.$font-main;
+
+	header {
+		h2 {
+			text-align: center;
+			font-weight: u.$fw-sm;
+			color: u.$dark-blue;
+			max-width: 375px;
+			margin-inline: auto;
+
+			@include a.break(1000px) {
+				font-size: 2rem;
+				max-width: 400px;
+			}
+
+			span {
+				font-weight: u.$fw-lg;
+			}
+		}
+
+		p {
+			color: u.$gray-blue;
+			text-align: center;
+			width: 85%;
+			margin-inline: auto;
+			font-size: 0.95rem;
+		}
+	}
+}

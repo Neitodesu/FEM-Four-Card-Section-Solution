@@ -1,0 +1,33 @@
+@use '../utils/' as u;
+@use '../abstracts/' as a;
+
+body {
+	background-color: u.$light-gray;
+
+	header {
+		padding-top: 5.25em;
+
+		h2 {
+			padding-bottom: 0.75em;
+		}
+
+		p {
+			padding-bottom: 3.75em;
+
+			@include a.break(600px) {
+				max-width: 550px;
+			}
+		}
+	}
+
+	main {
+		padding-bottom: 3.75em;
+
+		@include a.break(1000px) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 1em;
+		}
+	}
+}
