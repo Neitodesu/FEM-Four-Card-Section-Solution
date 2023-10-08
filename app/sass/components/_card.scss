@@ -12,7 +12,7 @@
 	h3 {
 		color: u.$dark-blue;
 
-		@include a.break(1000px) {
+		@include a.break(1100px) {
 			padding-bottom: 0.5rem;
 		}
 	}
@@ -26,12 +26,12 @@
 		padding-block: 2.5em 0;
 		transform: translate(200px, 0);
 
-		@include a.break(1000px) {
+		@include a.break(1100px) {
 			padding-top: 3.5em;
 		}
 	}
 
-	@include a.break(1000px) {
+	@include a.break(1100px) {
 		width: 355px;
 	}
 }
